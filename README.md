@@ -6,7 +6,7 @@
 ### **Phase 1:Clone the repository**
 
 ```bash
-git clone https://guthub.com/vipinchandran-pkd/Blogging-App-project.git
+git clone https://github.com/vipinchandran-pkd/Blogging-App-project.git
 ```
 **Create a private Github Repository and push the code to the repository. Create a token don't enable delete repo and package.**
 
