@@ -771,7 +771,7 @@ pipeline {
         }
         stage('git checkout') {
             steps {
-               git branch: 'main', credentialsId: 'git', url: 'https://github.com/didin2003/Blogging-App.git'
+               git branch: 'main', credentialsId: 'git', url: 'https://github.com/vipinchandran-pkd/Blogging-App-project.git'
             }
         }
         stage('Compile') {
@@ -819,21 +819,21 @@ pipeline {
             steps {
                 script{
                     withDockerRegistry(credentialsId: 'docker') {
-                        sh "docker build -t didin8080/blogging-app:latest ."
+                        sh "docker build -t vipinchandran-pkd/Blogging-App-project ."
                     }
                 }
             }
         }
         stage('Trivy image scan') {
             steps {
-                sh "trivy image --format table -o image.html didin8080/blogging-app:latest"
+                sh "trivy image --format table -o image.html vipinchandran-pkd/Blogging-App-project:latest"
             }
         }
         stage('Push to dockerhub') {
             steps {
                 script{
                     withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
-                        sh "docker push didin8080/blogging-app:latest"
+                        sh "docker push vipinchandran-pkd/Blogging-App-project"
                     }
                 }
             }
@@ -874,7 +874,7 @@ pipeline {
                 </body>
                 </html>
             """,
-            to: 'didinpg8080@gmail.com',
+            to: 'Vipin123@gmail.com',
             mimeType: 'text/html',
             attachmentsPattern: 'trivy.txt'
         }
