@@ -296,7 +296,7 @@ Login into docker hub on browser
 Login docker in terminal using
 
 ```bash
-docker login -u didin8080
+docker login -u vipin123
 ```
 
 It asks for a password provide dockerhub password
