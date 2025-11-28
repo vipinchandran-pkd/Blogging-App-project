@@ -912,7 +912,7 @@ Copy the ip adress of Slave-1 instance or Slave2 instance (workernode) and paste
 
 
 
-## **Phase 8: Moniter the Application**
+## **Phase 8: Monitor the Application**
 
 - Create an EC2 instance on AWS with Ubuntu 22.04, t3.medium, storage= 30gb.
 - Attach the Security group with instance. (game) 
